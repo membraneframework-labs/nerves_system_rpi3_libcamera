@@ -3,7 +3,7 @@
 [![CircleCI](https://circleci.com/gh/nerves-project/nerves_system_rpi3.svg?style=svg)](https://circleci.com/gh/nerves-project/nerves_system_rpi3)
 [![Hex version](https://img.shields.io/hexpm/v/nerves_system_rpi3.svg "Hex version")](https://hex.pm/packages/nerves_system_rpi3)
 
-This is the base Nerves System configuration for the Raspberry Pi 3 Model B.
+This is the base Nerves System configuration for the Raspberry Pi 3 Model B extended by libcamera and libcamera-apps.
 
 ![Fritzing Raspberry Pi 3 image](assets/images/raspberry-pi-3-model-b.png)
 <br><sup>[Image credit](#fritzing)</sup>
@@ -20,7 +20,7 @@ This is the base Nerves System configuration for the Raspberry Pi 3 Model B.
 | PWM                  | Yes, but no Elixir support                                  |
 | UART                 | 1 available - `ttyAMA0`                                     |
 | Display              | HDMI or 7" RPi Touchscreen                                  |
-| Camera               | Yes - via rpi-userland                                      |
+| Camera               | Yes - via rpi-userland or libcamera                         |
 | Ethernet             | Yes                                                         |
 | WiFi                 | Yes                                                         |
 | Bluetooth            | [See Bluetooth](#bluetooth)                                 |
@@ -29,7 +29,7 @@ This is the base Nerves System configuration for the Raspberry Pi 3 Model B.
 ## Using
 
 The most common way of using this Nerves System is create a project with `mix
-nerves.new` and to export `MIX_TARGET=rpi3`. See the [Getting started
+nerves.new` and to export `MIX_TARGET=rpi3_libcamera`. See the [Getting started
 guide](https://hexdocs.pm/nerves/getting-started.html#creating-a-new-nerves-app)
 for more information.
 
