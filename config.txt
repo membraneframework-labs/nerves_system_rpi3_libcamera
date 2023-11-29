@@ -10,9 +10,9 @@
 # https://github.com/raspberrypi/firmware/blob/master/boot/overlays/README
 
 # We always use the same names. The variant is selected in fwup.conf.
-disable_camera_led=1
-start_file=start.elf
-fixup_file=fixup.dat
+#disable_camera_led=1
+#start_file=start.elf
+#fixup_file=fixup.dat
 
 kernel=zImage
 
@@ -30,14 +30,14 @@ dtparam=spi=on
 dtparam=audio=on
 
 # Automatically load overlays for detected cameras
-camera_auto_detect=1
+#camera_auto_detect=1
 
 # Automatically load overlays for detected DSI displays
-display_auto_detect=1
+#display_auto_detect=1
 
 # Enable DRM VC4 V3D driver
-dtoverlay=vc4-kms-v3d
-max_framebuffers=2
+#dtoverlay=vc4-kms-v3d
+#max_framebuffers=2
 
 # Disable compensation for displays with overscan
 disable_overscan=1
