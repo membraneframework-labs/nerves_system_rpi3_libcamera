@@ -24,6 +24,19 @@ dtparam=i2c_arm=on
 dtparam=spi=on
 dtparam=audio=on
 
+# Automatically load overlays for detected cameras
+camera_auto_detect=1
+
+# Automatically load overlays for detected DSI displays
+display_auto_detect=1
+
+# Enable DRM VC4 V3D driver
+dtoverlay=vc4-kms-v3d
+max_framebuffers=2
+
+# Disable compensation for displays with overscan
+disable_overscan=1
+
 # Enable drivers for the Raspberry Pi 7" Touchscreen
 #
 # This makes it possible to run Scenic out of the box with the popular
