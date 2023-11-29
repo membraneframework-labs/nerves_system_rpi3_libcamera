@@ -9,6 +9,11 @@
 # https://github.com/raspberrypi/documentation/blob/master/configuration/device-tree.md
 # https://github.com/raspberrypi/firmware/blob/master/boot/overlays/README
 
+# We always use the same names. The variant is selected in fwup.conf.
+disable_camera_led=1
+start_file=start4.elf
+fixup_file=fixup4.dat
+
 kernel=zImage
 
 # Disable the boot rainbow
